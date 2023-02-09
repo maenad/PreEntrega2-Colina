@@ -71,7 +71,7 @@ body, html {
   margin: .5em;
 }
 
-.flex-container .card-info .cta button {
+.flex-container .card-info .cta {
   padding: 1em 2em;
   border: none;
   text-transform: uppercase;
@@ -81,30 +81,37 @@ body, html {
   border-radius: 5px;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.flex-container .card-info .cta .ingreso {
-  background-color: green;
-}
-
-.flex-container .card-info .cta .egreso {
-  background-color: red;
+  background-color: #125012;
 }
 
 .flex-container .card-lista {
   height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.flex-container .card-lista .ingresos, .flex-container .card-lista .egresos {
-  width: 50%;
-  text-align: center;
-  border: 1px solid black;
+.flex-container .card-lista .nuevo-elemento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .flex-container footer {

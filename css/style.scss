@@ -44,35 +44,31 @@ body, html {
             margin: .5em;
         }
         .cta {
-            button {
-                padding: 1em 2em;
-                border: none;
-                text-transform: uppercase;
-                color: white;
-                font-weight: 600;
-                letter-spacing: 2px;
-                border-radius: 5px;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            }
-    
-            .ingreso {
-                background-color: green;
-            }
-            .egreso {
-                background-color: red;
-            }
+            padding: 1em 2em;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: rgb(18, 80, 18);
+
         }
     }
 
     .card-lista {
         height: 400px;
+        display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        flex-direction: column;
 
-        .ingresos, .egresos {
-            width: 50%;
-            text-align: center;
-            border: 1px solid black;
+        .nuevo-elemento {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
         }
     }
 
